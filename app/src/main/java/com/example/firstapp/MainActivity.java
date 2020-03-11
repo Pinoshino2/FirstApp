@@ -21,12 +21,22 @@ public class MainActivity extends AppCompatActivity {
 //        }
 //        this.setTitle(String.valueOf(product));
 
-        TextView firstText = (TextView)findViewById(R.id.firstText);
+//        TextView firstText = (TextView)findViewById(R.id.firstText);
 //        firstText.setTextSize(12);
-        firstText.setTextColor(R.color.colorPrimaryDark);
-        long result = calc_ruiJyo(20);
+//        firstText.setTextColor(R.color.colorPrimaryDark);
+//        long result = calc_ruiJyo(20);
 //        this.setTitle(String.valueOf(result));
-        firstText.setText(String.valueOf(result));
+//        firstText.setText(String.valueOf(result));
+        Cat tama = new Cat("タマ", 3, "オス", "三毛猫");
+        Cat poti = new Cat("ポチ", 1, "メス", "白猫");
+
+        tama.say(tama.name + "は" + tama.gender + "だにゃ");
+        poti.say(poti.name + "は" + poti.gender + "だにゃ");
+
+        tama.sleep();
+        poti.say("寝てるし…");
+        poti.sleep();
+
     }
 
     private long calc_ruiJyo(int n) {
